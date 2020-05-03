@@ -19,6 +19,9 @@ sudo im-config
 # install libreoffice 
 sudo apt install libreoffice-texmaths jabref libreoffice-style-sifr 
 
+# installing latex
+sudo apt install gummi texlive-lang-english texlive-lang-german texlive-lang-cjk texlive-bibtex-extra texlive-science 
+
 # install python stuff
 sudo apt install python3-pip 
 pip3 install ipython matplotlib numpy scipy ipython jupyter
