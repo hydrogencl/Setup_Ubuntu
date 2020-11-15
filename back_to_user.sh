@@ -4,25 +4,43 @@ sudo passwd
 # installing necessary programs
 sudo apt update
 sudo apt upgrade
-sudo apt install audacious vlc hime hime-anthy pcmanfm terminator vim geany
 
-sudo apt install pcmanx-gtk2 gimp
+# install basic system tools
+sudo apt install pcmanfm terminator vim vpnc
+
+# Music & Videos
+sudo apt install audacious vlc 
+
+# BBS/Term connection
+sudo apt install pcmanx-gtk2
 
 # installing super flat icons
-sudo add-apt-repository ppa:daniruiz/flat-remix
-sudo apt-get update
-sudo apt-get install flat-remix
+# sudo add-apt-repository ppa:daniruiz/flat-remix
+# sudo apt-get update
+# sudo apt-get install flat-remix
 
 # configuring imput method
+sudo apt install hime hime-anthy 
 sudo im-config
 
-# install libreoffice 
-sudo apt install libreoffice-texmaths jabref libreoffice-style-sifr 
+# install coding related:
+sudo apt install geany  git 
 
-# installing latex
-sudo apt install gummi texlive-lang-english texlive-lang-german texlive-lang-cjk texlive-bibtex-extra texlive-science 
+# install libreoffice 
+sudo apt install libreoffice-texmaths jabref libreoffice-style-sifr pdfshuffler
 
 # install python stuff
 sudo apt install python3-pip 
-pip3 install ipython matplotlib numpy scipy ipython jupyter
+pip3 install ipython matplotlib numpy scipy jupyter networkx jupyterlab scikit-learn mpi4py
 
+# install for art
+sudo apt install gimp mypaint mypaint-brushes pikopixel.app inkscape inkscape-open-symbols
+
+# install for graphic-relate
+sudo apt install inkscape inkscape-open-symbols 
+
+# installation of Office Relate
+sudo apt install okular
+sudo apt install evolution evolution-ews
+
+sudo apt install texlive gummi texlive-publishers texlive-lang-german 
