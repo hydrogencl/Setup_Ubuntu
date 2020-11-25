@@ -25,6 +25,7 @@ sudo im-config
 
 # install coding related:
 sudo apt install geany  git 
+git config --global core.editor "vim"
 
 # install libreoffice 
 sudo apt install libreoffice-texmaths jabref libreoffice-style-sifr pdfshuffler
