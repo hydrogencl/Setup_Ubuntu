@@ -38,3 +38,8 @@ sudo apt install texlive gummi texlive-publishers texlive-lang-german -y
 # The example of mounting the ntfs by FSTAB
 # UUID=7557C71A72DE481F /Data           ntfs    defaults,umask=000,uid=1000,gid=1000,dmask=027,fmask=137 0 0
 # ssh-keygen -a 100 -t ed25519 -f ~/.ssh/id_ed25519
+
+# Fixing the Keychron Function Keys:
+#echo "options hid_apple fnmode=0" | sudo tee -a /etc/modprobe.d/hid_apple.conf
+#sudo update-initramfs -u | mkinitcpio -P
+
