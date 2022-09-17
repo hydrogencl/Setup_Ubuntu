@@ -33,7 +33,7 @@ sudo apt install inkscape inkscape-open-symbols -y
 sudo apt install okular -y
 sudo apt install evolution evolution-ews -y
 
-sudo apt install texlive gummi texlive-publishers texlive-lang-german -y
+sudo apt install texlive gummi texlive-publishers texlive-lang-german texlive-science texlive-fonts-extra -y
 
 # The example of mounting the ntfs by FSTAB
 # UUID=7557C71A72DE481F /Data           ntfs    defaults,umask=000,uid=1000,gid=1000,dmask=027,fmask=137 0 0
