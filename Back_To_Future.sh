@@ -1,10 +1,12 @@
-#!/usr/bash
+#!/usr/bin/sh
 sudo passwd
 
 # installing necessary programs
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install audacious vlc hime hime-anthy pcmanfm terminator vim geany vpnc -y
+sudo apt install audacious vlc hime hime-anthy pcmanfm terminator vim geany vpnc git -y
+
+git config core.editor "vim"
 
 sudo apt install pcmanx-gtk2 gimp -y
 
@@ -37,6 +39,7 @@ sudo apt install texlive gummi texlive-publishers texlive-lang-german texlive-sc
 
 # The example of mounting the ntfs by FSTAB
 # UUID=7557C71A72DE481F /Data           ntfs    defaults,umask=000,uid=1000,gid=1000,dmask=027,fmask=137 0 0
+# UUID=7557C71A72DE481F /Data           ntfs-3g    defaults,rw,permissions,umask=0022,uid=1000,gid=500,dmask=027,fmask=137 0 0
 # ssh-keygen -a 100 -t ed25519 -f ~/.ssh/id_ed25519
 
 # Fixing the Keychron Function Keys:
