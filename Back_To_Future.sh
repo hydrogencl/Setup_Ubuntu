@@ -4,7 +4,7 @@ sudo passwd
 # installing necessary programs
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install audacious vlc hime hime-anthy pcmanfm terminator vim geany vpnc git -y
+sudo apt install audacious vlc terminator vim geany vpnc git -y
 
 git config core.editor "vim"
 
@@ -14,6 +14,18 @@ sudo apt install pcmanx-gtk2 gimp -y
 # sudo add-apt-repository ppa:daniruiz/flat-remix
 # sudo apt-get update
 # sudo apt-get install flat-remix
+
+# Installing fcitx 5
+
+sudo apt install pkg-config fcitx5 libfcitx5core-dev libfcitx5config-dev libfcitx5utils-dev fcitx5-modules-dev     cmake extra-cmake-modules gettext libfmt-dev libicu-dev libjson-c-dev
+
+git clone https://github.com/openvanilla/fcitx5-mcbopomofo.git
+cd fcitx5-mcbopomofo/
+mkdir -p build
+cd build/
+cmake ../ -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release
+make 
+sudo make install
 
 # configuring imput method
 sudo im-config
